@@ -1,0 +1,9 @@
+{
+  "name": "Envoy",
+  "permalink": "envoy",
+  "description": "Manage Envoy visitors and employees",
+  "environment_keys": {
+    "NESTOR_ENVOY_API_KEY": true
+  }
+}
+
