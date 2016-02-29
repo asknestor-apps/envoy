@@ -25,7 +25,7 @@ module.exports = function(robot) {
     }
 
     var url = "https://app.envoy.com/api/entries.json?api_key=" + process.env.NESTOR_ENVOY_API_KEY;
-    var message = "Fetching entries...";
+    var message = "Fetching guests...";
 
     if(startTime != "" && endTime != "") {
       url = url + "&from_date=" + startTime + "&to_date=" + endTime;
