@@ -3,7 +3,7 @@ var chrono = require('chrono-node');
 var strftime = require('strftime');
 
 module.exports = function(robot) {
-  robot.respond(/envoy guests\s*(.*)$/, function(msg, done) {
+  robot.respond(/envoy guests\s*(.*)$/, { suggestions: ["envoy guests [time period]"] }, function(msg, done) {
     var timeQuery = msg.match[1];
     var startTime = "", endTime = "";
 
